@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 
 app.post('/slack', (req, res) => {
     console.log('mast hai bhjai');
-    res.send('Hello World!')
+    res.send(JSON.parse(req.body).challange)
 });
 
 app.get('/slack', (req, res) => {
